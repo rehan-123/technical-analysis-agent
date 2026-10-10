@@ -65,7 +65,7 @@ technical-analysis-agent/
 │   ├── pattern_service.py      #   Breakout / pullback / reversal / consolidation / volatility
 │   └── scoring_service.py      #   Entry zone, stop loss, targets, risk, confidence
 ├── utils/                      # Logging, exceptions
-├── tests/                      # pytest suite (22 tests, no network required)
+├── tests/                      # pytest suite (240 tests, no network required)
 ├── main.py                     # FastAPI entrypoint
 ├── requirements.txt
 └── .env.example
@@ -181,7 +181,7 @@ TA_RISK_MEDIUM_ATR_PCT=0.04
 pytest -v
 ```
 
-22 tests, all offline — they use `SyntheticDataProvider` (a seeded random
+240 tests, all offline — they use `SyntheticDataProvider` (a seeded random
 walk implementing the same `MarketDataProvider` interface as production)
 instead of hitting Yahoo Finance, so the suite is fast and deterministic.
 Coverage includes: each indicator in isolation, trend classification on
