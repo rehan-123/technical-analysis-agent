@@ -1,3 +1,5 @@
+<p align="center"><img src=".github/assets/banner.svg" width="100%" alt="technical-analysis-agent — technical-analysis specialist agent for stocks and crypto. 240 tests passing."></p>
+
 # Technical Analysis Agent
 
 A standalone, single-responsibility agent that analyzes **only** technical
